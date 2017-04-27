@@ -17,7 +17,7 @@ var CACHED_URLS = [
   // CSS and fonts
     'https://fonts.googleapis.com/css?family=Poppins',
     BASE_PATH + 'styles/newsStyle.css',
-    BASE_PATH + 'styles/formStyle.css'
+    BASE_PATH + 'styles/formStyle.css',
     BASE_PATH + 'styles/genericStyle.css',
     BASE_Path + 'styles/indexStyle.css',
     BASE_PATH + 'styles/articleStyle.css',
