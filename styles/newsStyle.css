@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F9F9F9;
+	margin: 0;
+}
+
+a:link { text-decoration: none; color: #2d63e2; } 
+a:visited { color: #2d63e2; } 
+
+hr {
+	background-color: #f59526;
+	border: #f59526 solid 1px;
+	margin: 10px 0 10px 0;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+p, ul, li {
+	width: 90%;
+}
+
+img {
+	width: 100%;
+}
+
+p, h3, span {
+	padding: 0 10px;
+}
+
+h1 {
+	margin-left: 19.5px;
+}	
+
+li {
+  background: #eee;
+  cursor: pointer;
+	border: solid 1px #F9F9F9;
+}
+
+#news>div {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+	
+* { margin: 0; padding: 0; }
+	
+ul {
+  list-style-type: none;
+  width: 95%;
+  margin-bottom: 30px;	
+}	
+
+h3 {
+  font: bold 20px;
+}
+
+li img {
+	float: left;
+	margin: 0 15px 0 0;
+	width: 150px;
+	height: auto;
+}
+
+li p {
+  font: 200 12px;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li {
+  background: #eee;
+  cursor: pointer;
+	border: solid 1px #F9F9F9;
+}
+}
+
+@media screen and (min-width: 800px) {
+li img {
+	width: 120px;
+}
+	
+ul {
+  width: 90%;
+}
+	
+}

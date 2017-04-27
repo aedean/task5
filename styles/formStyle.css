@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F9F9F9;
+	margin: 0;
+}
+
+input[type=submit] {
+	width: 150px;
+	height: auto;
+	padding: 10px 10px;
+	margin-bottom: 10px;
+	background-color: #0779bf !important;
+	border: solid #0779bf 1px !important;
+	color: white;
+}
+
+#container {
+	margin: 10px;
+	height: auto;
+}
+
+input[type="radio"] {
+    height: 15px;
+	width: 15px;
+	margin: 10px 0;
+}
+
+input{
+	height: 25px;
+	width: 185px;
+}
+
+input:valid,
+input:in-range {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
+
+.items {
+	padding: 10px;
+	margin: 10px 0;
+	display:inline-block;
+}
+
+h1 {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+img {
+	width: 95%;
+}
+
+@media screen and (min-width: 700px) {
+
+h1 {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 14px;
+	margin: 0;
+}
+
+div:nth-child(1) {
+	margin: 0;
+}
+
+form, img {
+	width: 46%;
+	display: inline;
+	vertical-align: middle;
+}	
+}
+
+@media screen and (min-width: 800px) {
+
+h1 {
+	text-align: left;
+}
+
+p {
+	font-size: 14px;
+}	
+
+#container {
+	margin: 0 19.5px;
+	text-align: center;
+	vertical-align: top;
+}
+	
+form {
+	padding: 20px;
+}
+	
+.items {
+	vertical-align: middle;
+	width: 30%;
+	height: auto;
+	text-align: left;
+}
+	
+}
+
+@media screen and (min-width: 900px) {
+p {
+	font-size: 16px;
+}	
+}
+
+@media screen and (min-width: 1000px) {
+p {
+	font-size: 18px;
+}	
+}

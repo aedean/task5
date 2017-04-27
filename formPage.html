@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Newsletter</title>
+			<link rel="stylesheet" href="styles/genericStyle.css">
+			<link rel="stylesheet" href="styles/formStyle.css">
+			<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="apple-mobile-web-app-title" content="Shrewsbury Tourism" />
+			<!-- Touch Image Apple -->
+			<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+			<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+			<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+			<link rel="manifest" href="/manifest.json">
+			<meta name="msapplication-TileColor" content="#ffffff">
+			<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+			<meta name="theme-color" content="#ffffff">
+			
+			<!-- Splash Screen -->						
+<!-- iPad, retina, portrait --><link href="apple-touch-startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPad, retina, landscape --><link href="apple-touch-startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPad, portrait --><link href="apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+<!-- iPad, landscape --><link href="apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+<!-- iPhone 6 --><link rel="apple-touch-startup-image" href="apple-touch-startup-image-750x1294.png" media="(device-width: 375px)">
+<!-- iPhone 6 Plus --><link rel="apple-touch-startup-image" href="apple-touch-startup-image-1242x2148.png" media="(device-width: 414px)">
+<!-- iPhone 5 --><link href="apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPhone, retina --><link href="apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPhone --><link href="apple-touch-startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+</head>
+
+<body>
+			
+<div class="topnav" id="myTopnav">
+  <a href="index.html" id="logoA"><img src="images/logo.png" alt="Shrewsbury original one off logo" id="logo"></a>
+  <a href="index.html">Home</a>
+  <a href="newsPage.html">News</a>
+  <a href="formPage.html">Newsletter</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="container">
+<h1>Shrewsbury Newsletter</h1>
+<div class="items">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum egestas eros at sagittis. Suspendisse potenti. Quisque venenatis odio turpis, at dignissim purus molestie at. Duis non mollis libero. Fusce tempor enim tortor, et sodales velit consequat a.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum egestas eros at sagittis. Suspendisse potenti. Quisque venenatis odio turpis, at dignissim purus molestie at. Duis non mollis libero. Fusce tempor enim tortor, et sodales velit consequat a.</p>
+	</div>	
+			<form class="items">
+			  <h3>Sign Up here</h3>
+				  First name:<br>
+				  <input type="text" name="firstname" pattern="[A-Za-z]{1,32}"  required><br>
+				  Last name:<br>
+				  <input type="text" name="lastname" pattern="[A-Za-z]{1,32}"  required>
+				  <br>
+				  <input type="radio" name="gender" value="male" checked> Male<br>
+				  <input type="radio" name="gender" value="female"> Female<br>
+				  <input type="radio" name="gender" value="other"> Other
+				  <br>
+				  Age:<br>
+				  <input type="number" name="age" min="15" max="100" required>
+				  <br>
+				   E-mail:<br>
+				  <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+				  <br>
+				  <br>
+				  <input type="submit" value="Submit">
+			</form>
+	<img src="images/shrewsburyFormPhoto.jpg" alt="Shrewsbury center" class="items"/>			
+</div>
+
+<footer>
+		<p>Shrewsbury Visitor Information Centre, The Music Hall, The Square, Shrewsbury, SY1 1LH. Telephone: +44 (0) 1743 258888. Email: visitorinfo@shropshire.gov.uk</p>
+		<img src="images/Facebook.png" alt="facebook logo">
+		<img src="images/Google+.png" alt="google plus logo">
+		<img src="images/Twitter.png" alt="twitter logo">
+		<img src="images/YouTube.png" alt="youtube logo">
+	</footer>
+<script src="scripts/menu.js"></script>
+</body>
+</html>

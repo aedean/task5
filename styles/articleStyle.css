@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+#heroImage{
+	width:100%;
+	height: auto;
+}
+
+#container {
+	margin: 0 10px 50px;
+}
+@media screen and (min-width: 600px) {
+#heroImage{
+	width:100%;
+	height: auto;
+	float:left; 
+	display:inline; 
+	width: 45% !important;
+	margin: 10px;
+}
+}

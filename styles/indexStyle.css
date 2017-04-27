@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#heroImage {
+	width: 100%;
+	height: auto;
+}
+
+#container {
+	margin:10px;
+}
+
+.items {
+	text-align: center;
+	background-color:grey;
+	padding: 10px;
+	margin: 10px 0;
+	display:inline-block;
+}      
+#map {
+
+	height: 400px;
+	background-color: grey;
+}
+
+@media screen and (min-width: 800px) {
+	.items {
+		width: 30%;
+	}
+	
+	.row {
+		text-align: center;
+	}
+	
+	p, h1 {
+		margin: 0 19.5px;
+	}
+	
+	#map {
+		margin: 0 17px;
+	}
+}
+
