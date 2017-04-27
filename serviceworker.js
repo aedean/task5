@@ -19,7 +19,7 @@ var CACHED_URLS = [
     BASE_PATH + 'styles/newsStyle.css',
     BASE_PATH + 'styles/formStyle.css',
     BASE_PATH + 'styles/genericStyle.css',
-    BASE_Path + 'styles/indexStyle.css',
+    BASE_PATH + 'styles/indexStyle.css',
     BASE_PATH + 'styles/articleStyle.css',
     BASE_PATH + 'appimages/event-default.png',
 
