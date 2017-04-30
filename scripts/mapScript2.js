@@ -1,16 +1,26 @@
-      var map, infoWindow, directionsService, directionsDisplay;
+      var map, infoWindow, directionsService, directionsDisplay, service;
       let pos;
       function initMap() {
        directionsService = new google.maps.DirectionsService;
-        directionsDisplay = new google.maps.DirectionsRenderer;
+       directionsDisplay = new google.maps.DirectionsRenderer;
+	   const shrewsbury = new google.maps.LatLng{52.711178, -2.756441};	  
 
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 52.711178, lng: -2.756441},
+          center: shrewsbury,
           zoom: 10
         });
         directionsDisplay.setMap(map);
 
         infoWindow = new google.maps.InfoWindow; //pop up window
+		  
+		const placeRequest = {
+			location: shrewsbury,
+			radius: '500',
+			query: 'petrol station'
+		};
+		  
+		service = new google.maps.places.PlacesService(map);
+		service.textSearch(request, callback);  
 		  
 //Get GEOLOCATION
         if (navigator.geolocation) {
@@ -34,6 +44,14 @@
         }
 	  } //end of initmap function
 
+      function callback(results, status) {
+		  if(status == google.maps.places.PlaceServiceStatus.OK){
+			  for (var i = 0; i < results.length; i++){
+				  var place = results[i];
+				  createMarker(results[i]);
+			  }
+		  }
+	  }
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         infoWindow.setPosition(pos);
         infoWindow.setContent(browserHasGeolocation ?
