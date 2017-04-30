@@ -9,7 +9,7 @@
           center: shrewsbury,
           zoom: 10
         });
-	      
+	      console.log(map);
         directionsDisplay.setMap(map);
 
         infoWindow = new google.maps.InfoWindow; //pop up window
