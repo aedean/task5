@@ -19,8 +19,8 @@
 			query: 'petrol station'
 		};
 		  
-		service = new google.maps.places.PlacesService(map);
-		service.textSearch(request, callback);  
+		  service = new google.maps.places.PlacesService(map);
+                  service.textSearch(request, callback);
 		  
 //Get GEOLOCATION
         if (navigator.geolocation) {
