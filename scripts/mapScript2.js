@@ -3,7 +3,7 @@
       function initMap() {
        directionsService = new google.maps.DirectionsService;
        directionsDisplay = new google.maps.DirectionsRenderer;
-	   const shrewsbury = new google.maps.LatLng{52.711178, -2.756441};	  
+	   const shrewsbury = new google.maps.LatLng(52.711178, -2.756441);	  
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: shrewsbury,
