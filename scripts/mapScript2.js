@@ -40,7 +40,7 @@
 			query: 'petrol station'
 		};
 	      //check
-		  
+		  console.log(map);
 		  service = new google.maps.places.PlacesService(map);
                   service.textSearch(request, callback);
 	  } //end of initmap function
