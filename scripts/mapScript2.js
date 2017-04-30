@@ -18,6 +18,7 @@
 			radius: '500',
 			query: 'petrol station'
 		};
+	      //check
 		  
 		  service = new google.maps.places.PlacesService(map);
                   service.textSearch(request, callback);
