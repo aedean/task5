@@ -9,7 +9,6 @@
           center: shrewsbury,
           zoom: 10
         });
-	      console.log(map);
         directionsDisplay.setMap(map);
 
         infoWindow = new google.maps.InfoWindow; //pop up window
@@ -34,14 +33,7 @@
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
-	      //check
-	      service = new google.maps.places.PlacesService(map);
-	      	      	service.nearbySearch({
-			location: shrewsbury,
-			radius: '500',
-			type: ['petrol station']
-			}, callback);
-		  console.log("placeRequest changed");
+	      
 	  } //end of initmap function
 
       function callback(results, status) {
