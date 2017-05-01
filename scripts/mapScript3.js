@@ -73,10 +73,10 @@ var map, infoWindow, directionsService, directionsDisplay, service;
       var infowindow;
 
       function initMap() {
-        var pyrmont = {lat: -33.867, lng: 151.195};
+         var shrewsbury = {lat: 52.711178, lng: -2.756441};	
 
         map = new google.maps.Map(document.getElementById('map'), {
-          center: pyrmont,
+          center: shrewsbury,
           zoom: 15
         });
 
