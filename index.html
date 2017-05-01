@@ -28,11 +28,11 @@
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 	<!-- <img id="heroImage" src="images/heroImage.jpg" alt="Picture of Shrewsbury"> -->
-	<picture id="heroImage" alt="Picture of Shrewsbury">
-		<source srcset="images/heroImage.jpg 1x" alt="Picture of Shrewsbury">
-		<source srcset="images/heroImage.jpg 2x" alt="Picture of Shrewsbury">
-		<img srcset="images/heroImage.jpg 3x" alt="Picture of Shrewsbury">
-    </picture>
+        <picture>
+				<source media="(min-width: 650px)" srcset="images/sh-600.jpg 1x,images/sh-900.jpg 2x,images/sh-1300.jpg 3x" width="300" height="300">
+				<source media="(min-width: 465px)" srcset="images/sh-600.jpg 1x,images/sh-900.jpg 2x,images/sh-1300.jpg 3x"width="200" height="200">
+  				<img src="images/sh-900M.jpg" alt="Shrewsbury" width="100%" height="auto">
+			</picture>
 	<div id="container">
 
 		<h1>Shrewsbury News</h1>
