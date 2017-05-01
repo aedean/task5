@@ -168,7 +168,7 @@ var map,
 function initMap() {
        directionsService = new google.maps.DirectionsService;
        directionsDisplay = new google.maps.DirectionsRenderer;	  
-
+       directionsDisplay.setMap(map);
          var shrewsbury = {lat: 52.711178, lng: -2.756441};	
 
         map = new google.maps.Map(document.getElementById('map'), {
