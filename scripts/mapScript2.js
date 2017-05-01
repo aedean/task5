@@ -34,13 +34,13 @@
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
-	      		const placeRequest = {
+	      	const placeRequest = {
 			location: shrewsbury,
 			radius: '500',
 			query: 'petrol station'
 		};
 	      //check
-		  console.log(map);
+		  console.log("placeRequest changed");
 		  service = new google.maps.places.PlacesService(map);
                   service.textSearch(placeRequest, callback);
 	  } //end of initmap function
