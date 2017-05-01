@@ -36,7 +36,7 @@
         }
 	      //check
 	      service = new google.maps.places.PlacesService(map);
-	      	      	service.placeRequest({
+	      	      	service.nearbySearch({
 			location: shrewsbury,
 			radius: '500',
 			type: ['petrol station']
