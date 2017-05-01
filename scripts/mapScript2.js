@@ -41,7 +41,6 @@
 			radius: '500',
 			type: ['petrol station']
 			}, callback);
-		}
 		  console.log("placeRequest changed");
 	  } //end of initmap function
 
