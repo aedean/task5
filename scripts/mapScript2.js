@@ -34,15 +34,15 @@
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
-	      	const placeRequest = {
+	      //check
+	      service = new google.maps.places.PlacesService(map);
+	      	      	service.placeRequest({
 			location: shrewsbury,
 			radius: '500',
-			query: 'petrol station'
-		};
-	      //check
+			type: ['petrol station']
+			}, callback);
+		}
 		  console.log("placeRequest changed");
-		  service = new google.maps.places.PlacesService(map);
-                  service.textSearch(placeRequest, callback);
 	  } //end of initmap function
 
       function callback(results, status) {
@@ -59,6 +59,18 @@
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
+      }
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
       }
 //route function
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
