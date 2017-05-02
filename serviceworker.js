@@ -46,7 +46,7 @@ var CACHED_URLS = [
 
 ];
 
-//var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCMNj1opBAeNjTEY4PdjCABCwJdrHx0cvI&callback=initMap';
+var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCMNj1opBAeNjTEY4PdjCABCwJdrHx0cvI&callback=initMap';
 
 self.addEventListener('install', function(event) {
   // Cache everything in CACHED_URLS. Installation fails if anything fails to cache
@@ -73,11 +73,23 @@ self.addEventListener('fetch', function(event) {
 */
 
 self.addEventListener('fetch', function(event) {
+  if (requestURL.href === googleMapsAPIJS) {
+    event.respondWith(
+      fetch(
+        googleMapsAPIJS+'&'+Date.now(),
+        { mode: 'no-cors', cache: 'no-store' }
+      ).catch(function() {
+        return caches.match('offline-map.js');
+      })
+    );
+  }
+    else {
   event.respondWith(
     caches.match(event.request).then(function(response) {
       return response || fetch(event.request);
     })
   );
+    }
 });
 
 
