@@ -20,26 +20,26 @@ var CACHED_URLS = [
 
     //Images for page
 //    BASE_PATH + 'offlinemap.jpg',
-    BASE_PATH + 'task5/images/facebook.png',
-    BASE_PATH + 'task5/images/Google+.png',
-    BASE_PATH + 'task5/images/Twitter.png',
-    BASE_PATH + 'task5/images/YouTube.png',
-    BASE_PATH + 'task5/images/logo.png',
-    BASE_PATH + 'task5/images/newsImg1.png',
-    BASE_PATH + 'task5/images/sh-1300.jpg',
-    BASE_PATH + 'task5/images/sh-600.jpg',
-    BASE_PATH + 'task5/images/sh-900.jpg',
-    BASE_PATH + '../images/sh-900M.jpg',
-    BASE_PATH + '../images/shrewsburyFormPhoto.jpg',    
+    BASE_PATH + 'images/facebook.png',
+    BASE_PATH + 'images/Google+.png',
+    BASE_PATH + 'images/Twitter.png',
+    BASE_PATH + 'images/YouTube.png',
+    BASE_PATH + 'images/logo.png',
+    BASE_PATH + 'images/newsImg1.png',
+    BASE_PATH + 'images/sh-1300.jpg',
+    BASE_PATH + 'images/sh-600.jpg',
+    BASE_PATH + 'images/sh-900.jpg',
+    BASE_PATH + 'images/sh-900M.jpg',
+    BASE_PATH + 'images/shrewsburyFormPhoto.jpg',    
     // JavaScript
 //    BASE_PATH + 'offline-map.js',
   // CSS and fonts
-    BASE_PATH + '../styles/genericStyle.css',
-    BASE_PATH + '../styles/articleStyle.css',
-    BASE_PATH + '../styles/formStyle.css',
-    BASE_PATH + '../styles/indexStyle.css',
-    BASE_PATH + '../styles/newsStyle.css',
-    BASE_PATH + '../scripts/menu.js'
+    BASE_PATH + 'styles/genericStyle.css',
+    BASE_PATH + 'styles/articleStyle.css',
+    BASE_PATH + 'styles/formStyle.css',
+    BASE_PATH + 'styles/indexStyle.css',
+    BASE_PATH + 'styles/newsStyle.css',
+    BASE_PATH + 'scripts/menu.js'
 
 //BASE_PATH + 'appimages/news-default.jpg'
 
