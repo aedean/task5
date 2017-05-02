@@ -20,12 +20,12 @@ var CACHED_URLS = [
 
     //Images for page
 //    BASE_PATH + 'offlinemap.jpg',
-    BASE_PATH + 'images/facebook.png',
+    BASE_PATH + 'images/Facebook.png',
     BASE_PATH + 'images/Google+.png',
     BASE_PATH + 'images/Twitter.png',
     BASE_PATH + 'images/YouTube.png',
     BASE_PATH + 'images/logo.png',
-    BASE_PATH + 'images/newsImg1.png',
+    BASE_PATH + 'images/newsImg1.jpg',
     BASE_PATH + 'images/sh-1300.jpg',
     BASE_PATH + 'images/sh-600.jpg',
     BASE_PATH + 'images/sh-900.jpg',
