@@ -57,6 +57,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
+    var requestURL = new URL(event.request.url);
  if (CACHED_URLS.includes(requestURL.href) || CACHED_URLS.includes(requestURL.pathname)) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
