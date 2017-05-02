@@ -39,7 +39,8 @@ var CACHED_URLS = [
     BASE_PATH + 'styles/formStyle.css',
     BASE_PATH + 'styles/indexStyle.css',
     BASE_PATH + 'styles/newsStyle.css',
-    BASE_PATH + 'scripts/menu.js'
+    BASE_PATH + 'scripts/menu.js',
+        BASE_PATH + 'serviceworker.js'
 
 //BASE_PATH + 'appimages/news-default.jpg'
 
