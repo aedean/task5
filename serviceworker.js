@@ -9,7 +9,7 @@ var CACHED_URLS = [
     BASE_PATH + 'articlePage.html',
     BASE_PATH + 'newsPage.html',
     //favicons
-   BASE_PATH + '../favicon/android-chrome-144x144.png',
+   BASE_PATH + 'task5/favicon/android-chrome-144x144.png',
    BASE_PATH + '../favicon/apple-touch-icon.png', 
    BASE_PATH + '../favicon/favicon-16x16.png',
    BASE_PATH + '../favicon/favicon-32x32.png',
