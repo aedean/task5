@@ -1,4 +1,4 @@
-var BASE_PATH = '/task5';
+var BASE_PATH = '/task5/';
 var CACHE_NAME = 'gih-cache-v7';
 //var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-news&apiKey=c0d26668d2dd4049bfd66155dde340b3";
 
@@ -9,14 +9,14 @@ var CACHED_URLS = [
     BASE_PATH + 'articlePage.html',
     BASE_PATH + 'newsPage.html',
     //favicons
-   BASE_PATH + 'task5/favicon/android-chrome-144x144.png',
-   BASE_PATH + 'task5/favicon/apple-touch-icon.png', 
-   BASE_PATH + 'task5/favicon/favicon-16x16.png',
-   BASE_PATH + 'task5/favicon/favicon-32x32.png',
-   BASE_PATH + 'task5/favicon/manifest.json', 
-   BASE_PATH + 'task5/favicon/favicon.ico',
-   BASE_PATH + 'task5/favicon/mstile-150x150.png',
-   BASE_PATH + 'task5/favicon/safari-pinned-tab.svg',
+   BASE_PATH + 'favicon/android-chrome-144x144.png',
+   BASE_PATH + 'favicon/apple-touch-icon.png', 
+   BASE_PATH + 'favicon/favicon-16x16.png',
+   BASE_PATH + 'favicon/favicon-32x32.png',
+   BASE_PATH + 'favicon/manifest.json', 
+   BASE_PATH + 'favicon/favicon.ico',
+   BASE_PATH + 'favicon/mstile-150x150.png',
+   BASE_PATH + 'favicon/safari-pinned-tab.svg',
 
     //Images for page
 //    BASE_PATH + 'offlinemap.jpg',
