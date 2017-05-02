@@ -73,6 +73,7 @@ self.addEventListener('fetch', function(event) {
 */
 
 self.addEventListener('fetch', function(event) {
+  var requestURL = new URL(event.request.url);
   if (requestURL.href === googleMapsAPIJS) {
     event.respondWith(
       fetch(
