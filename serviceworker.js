@@ -59,21 +59,6 @@ self.addEventListener('install', function(event) {
   );
 });
 
-/*
-self.addEventListener('fetch', function(event) {
-    var requestURL = new URL(event.request.url);
- if (CACHED_URLS.includes(requestURL.href) || CACHED_URLS.includes(requestURL.pathname)) {
-    event.respondWith(
-      caches.open(CACHE_NAME).then(function(cache) {
-        return cache.match(event.request).then(function(response) {
-          return response || fetch(event.request);
-        });
-      })
-    );
-  }
-});
-*/
-
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
   if (requestURL.href === googleMapsAPIJS) {
@@ -86,16 +71,7 @@ self.addEventListener('fetch', function(event) {
       })
     );
   }
-  else if (CACHED_URLS.includes(requestURL.href) || CACHED_URLS.includes(requestURL.pathname)) {
-    event.respondWith(
-      caches.open(CACHE_NAME).then(function(cache) {
-        return cache.match(event.request).then(function(response) {
-          return response || fetch(event.request);
-        })
-      })
-    );
-  }
-    else   if (requestURL.pathname === BASE_PATH + 'index.html') {
+  else if (requestURL.pathname === BASE_PATH + 'index.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match('index.html').then(function(cachedResponse) {
@@ -107,7 +83,28 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );    
- // Handle requests for Google Maps JavaScript API file
+  }
+    else if (requestURL.pathname === BASE_PATH + 'newsPage.html') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return cache.match('index.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('index.html').then(function(networkResponse) {
+            cache.put('index.html', networkResponse.clone());
+            return networkResponse;
+          });
+          return cachedResponse || fetchPromise;
+        });
+      })
+    );    
+  }   
+  else if (CACHED_URLS.includes(requestURL.href) || CACHED_URLS.includes(requestURL.pathname)) {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return cache.match(event.request).then(function(response) {
+          return response || fetch(event.request);
+        })
+      })
+    );
   }
     else {
   event.respondWith(
@@ -117,8 +114,6 @@ self.addEventListener('fetch', function(event) {
   );
     }
 });
-
-
 
 self.addEventListener('activate', function(event) {
   event.waitUntil(
