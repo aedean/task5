@@ -1,10 +1,52 @@
-var family = [{
-    "name" : "Jason",
-    "age" : "24",
-    "gender" : "male"
+var news = [{
+    "image" : "images/newsImg1.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
 },
 {
-    "name" : "Kyle",
-    "age" : "21",
-    "gender" : "male"
-}];
+    "image" : "images/newsImg2.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg3.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg4.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg5.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+}, 
+{
+    "image" : "images/newsImg6.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg7.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg8.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg9.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+},
+{
+    "image" : "images/newsImg10.jpg",
+    "header" : "Shrewsbury",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
+}            
+];
+
