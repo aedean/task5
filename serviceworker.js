@@ -42,7 +42,7 @@ var CACHED_URLS = [
     BASE_PATH + 'scripts/menu.js',
     BASE_PATH + 'serviceworker.js',
     BASE_PATH + 'offline-map.js',
-    BASE_PATH + 'offlinemap.jpg'
+    BASE_PATH + 'styles/offlinemap.jpg'
 
 //BASE_PATH + 'appimages/news-default.jpg'
 
