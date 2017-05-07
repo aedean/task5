@@ -33,7 +33,7 @@ var CACHED_URLS = [
     BASE_PATH + 'images/newsImg6.jpg',
     BASE_PATH + 'images/newsImg7.jpg',
     BASE_PATH + 'images/newsImg8.JPG',
-    //BASE_PATH + 'images/newsImg9.jpg',
+    BASE_PATH + 'images/newsImg9.jpg',
     BASE_PATH + 'images/newsImg10.jpg',
     BASE_PATH + 'images/sh-1300.jpg',
     BASE_PATH + 'images/sh-600.jpg',
