@@ -4,7 +4,7 @@ if(eventsContainer){
     }).then(events=>{const eventsHTML=events.map(event=>{
         return `
 			        	<li>
-                    <img src="${event.picture}" alt="news image of shrewsbury">
+                    <img src="${event.image}" alt="news image of shrewsbury">
                     <h3>${event.header}</h3>
                     <p>${event.text}</p>
                 </li>
