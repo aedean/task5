@@ -1,4 +1,4 @@
-news = '[
+[
 {
     "image" : "images/newsImg1.jpg",
     "header" : "Shrewsbury",
@@ -49,5 +49,5 @@ news = '[
     "header" : "Shrewsbury",
     "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod ultrices ante, ac laoreet nulla vestibulum adipiscing. Nam quis justo in augue auctor imperdiet."
 }            
-]';
+]
 
