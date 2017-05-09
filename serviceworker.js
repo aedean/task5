@@ -1,7 +1,5 @@
 var BASE_PATH = '/task5/';
 var CACHE_NAME = 'gih-cache-v7';
-//var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-news&apiKey=c0d26668d2dd4049bfd66155dde340b3";
-
 var CACHED_URLS = [
     // Our HTML
     BASE_PATH + 'index.html',
