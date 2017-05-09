@@ -51,6 +51,9 @@ var CACHED_URLS = [
     BASE_PATH + 'scripts/menu.js',
     BASE_PATH + 'serviceworker.js',
     BASE_PATH + 'offline-map.js',
+    BASE_PATH + 'newsData.json',
+    BASE_PATH + 'newsScript.js',
+    
     BASE_PATH + 'styles/offlinemap.jpg'
 
 //BASE_PATH + 'appimages/news-default.jpg'
@@ -106,6 +109,18 @@ self.addEventListener('fetch', function(event) {
       })
     );    
   }   
+ else if (requestURL.pathname === BASE_PATH + 'newsData.json') {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(function(cache) {
+        return fetch(event.request).then(function(networkResponse) {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        }).catch(function() {
+          return caches.match(event.request);
+        });
+      })
+    );
+  }    
   else if (CACHED_URLS.includes(requestURL.href) || CACHED_URLS.includes(requestURL.pathname)) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
